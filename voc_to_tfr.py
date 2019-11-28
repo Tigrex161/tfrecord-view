@@ -159,7 +159,7 @@ if __name__ == '__main__':
     # Repo
     class_labels =    {"doc" : 1}
     data_path = r"annotated_images/"
-    output_path =    data_path + r'data.record'
+    output_path =    data_path + r'data.tfrecord'
     
     
     verbose = 1
