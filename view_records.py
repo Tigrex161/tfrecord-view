@@ -120,9 +120,9 @@ def view_records(file_path, class_labels, stride = 1, verbose = 1):
 
 #%%
 if __name__ == '__main__':
-    class_labels =  {"dog" : 1, "cat": 2 }
+    class_labels =  {"doc" : 1}
     #Make the following using voc_to_tfr.py
-    data_path = r"annotated_images/cats_dogs.record"
+    data_path = r"annotated_images/data.record"
 
     verbose = 1
     stride = 1
