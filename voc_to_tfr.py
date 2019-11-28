@@ -157,13 +157,13 @@ def recursive_parse_xml_to_dict(xml):
 #%%
 if __name__ == '__main__':
     # Repo
-    class_labels =    {"dog" : 1, "cat": 2 }
+    class_labels =    {"doc" : 1}
     data_path = r"annotated_images/"
-    output_path =    data_path + r'cats_dogs.record'
+    output_path =    data_path + r'data.record'
     
     
     verbose = 1
-    filename_query = os.path.join(data_path, '*.png')    #can change to any format (bmp, png etc)
+    filename_query = os.path.join(data_path, '*.jpg')    #can change to any format (bmp, png etc)
     image_paths = np.sort(glob.glob(filename_query))
     
     writer = tf.python_io.TFRecordWriter(output_path)
